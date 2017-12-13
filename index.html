@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+  <link rel="stylesheet" href="jquery-ui.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery-ui.min.js"></script>
+  <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; background: #fff; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  </style>
+  <script>
+  $(function() {
+    var state = true;
+    $( "#button" ).click(function() {
+      if ( state ) {
+        $( "#effect" ).animate({
+          backgroundColor: "#aa0000",
+          color: "#fff",
+          width: 500
+        }, 1000 );
+      } else {
+        $( "#effect" ).animate({
+          backgroundColor: "#fff",
+          color: "#000",
+          width: 240
+        }, 1000 );
+      }
+      state = !state;
+    });
+  });
+  </script>
+</head>
+
+<body >
+    
+<table background="timg-2.jpeg" width=1000 height="800" border=0 align="center" cellpadding=0 cellspacing=0>
+  <tbody>
+
+          <tr>
+             <td width="100%" align="center">
+             <font size=2>* : * : * : * : * : * : *&nbsp;<br>
+                                <br>
+                                <font color="#000000">■<a href="second.html">青春留念墙</a></font><br>
+                                <br>
+                                <font color="#000000">■<a href="third.html">古诗致青春</a></font><br>
+                                <br>
+                                <font color="#000000">■<a href="four.html">青春视音园</a></font><br>
+                                <br>
+                                <font color="#000000">■<a href="fifth.html">励志青春语</a></font><br>
+                                <br>
+                                <div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">动画（Animation）</h3>
+    <p>愿我们走出半生，归来仍是少年。</p>
+    <p>青春是一个梦，梦里有阳光也有彩虹；希望是一个梦，梦里有鸟语也有花香。一株嫩芽，可以唤醒一滩荒原，一点希望，可以振奋一片广阔的蓝天；一颗明星，能够感受执着的坚强；一句古诗，能够唤醒青春年少时的意气风发。</p>
+  </div>
+</div>
+ 
+<a href="#" id="button" class="ui-state-default ui-corner-all">切换特效</a>
+                              
+                                
+                                * : * : * : * : * : * : * <br><br>
+              </font>
+              <font color=#ff9999 size=2>圖片來源：網絡</font><br>
+              <font color=#ff8888 size=2></font><br>
+            <font color=#9c747e size=2>&nbsp;&nbsp; （泉源編輯）</font>
+            </td>
+                    </tr>
+                  </tbody>
+                </table>
+          welcome! 
+</body>
+</html>
